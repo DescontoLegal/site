@@ -27,7 +27,7 @@ export default function SimpleSlider() {
   };
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-1/2 mx-auto h-[400px] overflow-hidden">
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
@@ -60,9 +60,8 @@ export default function SimpleSlider() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full ${
-              current === index ? "bg-white" : "bg-gray-400"
-            }`}
+            className={`w-3 h-3 rounded-full ${current === index ? "bg-white" : "bg-gray-400"
+              }`}
           ></button>
         ))}
       </div>

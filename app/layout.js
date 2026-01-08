@@ -1,3 +1,4 @@
+import WhatsappButton from "./components/WhatsappButton";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -23,6 +24,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <WhatsappButton
+          phone="5535984265018"
+          message="Olá! Vim pelo site e gostaria de mais informações."
+        />
       </body>
     </html>
   );
